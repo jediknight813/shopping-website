@@ -22,6 +22,7 @@ function Shop() {
             {item_list.map(Element => (
                 <div key={Element.image}>
                     <img className="item_image" alt={Element.image} src={Element.image} />
+                    <button className="item_button"> Add to cart</button> <div className="item_price"> ⭐⭐⭐⭐⭐ {Element.price} </div>
                 </div>
             ))}
         </div>

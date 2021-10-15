@@ -154,7 +154,30 @@
     grid-template: repeat(10, 1fr) / repeat(2, 1fr);
     background-color: whitesmoke;
     width: 80%;
-    height: 250%;
+    height: 325%;
     top: 13%;
     left: 11%;
+}
+
+.item_button {
+    width: 20%;
+    height: 5%;
+    top: 11%;
+    right: 36%;
+    background-color: rgb(244, 131, 32);
+    color: white;
+    position: relative;
+    border-radius: 20px;
+}
+
+.item_button:hover {
+    font-size: large;
+}
+
+.item_price {
+    font-family: cursive;
+    font-size: 40px;
+    position: relative;
+    left: 26%;
+    top: -6%;
 }

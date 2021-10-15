@@ -16,7 +16,7 @@ function NavBar() {
             </Link>
 
 
-            <Link className="Link" to="/shop">
+            <Link className="Link" to="/about">
                 <h1 className="nav_text">About</h1>
             </Link>
 

@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom';
 import Footer from './Components/Footer'
 import Header from './Components/Header'
 import NavBar from './Components/NavBar'
-import PageBackground from './Components/PageBackground'
+import HomePageBackground from './Components/HomePageBackground'
 import Shop from './Components/Shop';
 import { BrowserRouter as Router, Route} from 'react-router-dom'
+import AboutPage from './Components/AboutPage'
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -13,7 +15,8 @@ ReactDOM.render(
       <Header />
       <NavBar />
       <Route exact path="/shop" component={Shop}/>
-      <Route exact path='/' component={PageBackground} />
+      <Route exact path='/' component={HomePageBackground} />
+      <Route exact path="/about" component={AboutPage} />
       <Footer />
     </Router>
   </React.StrictMode>,

@@ -1,7 +1,7 @@
 import '../Styles/Styles.css'
 
 
-function PageBackground() {
+function HomePageBackground() {
     return(
        <div className="page_background_color">
 
@@ -28,4 +28,4 @@ function PageBackground() {
     );
 }
 
-export default PageBackground
+export default HomePageBackground

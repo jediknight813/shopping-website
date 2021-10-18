@@ -20,10 +20,6 @@ function NavBar() {
                 <h1 className="nav_text">About</h1>
             </Link>
 
-            <Link className="Link" to="/checkout">
-                <h1 className="nav_text">🛒</h1>
-            </Link>
-
 
        </div>
     );

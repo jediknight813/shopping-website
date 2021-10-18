@@ -182,3 +182,77 @@
     left: 26%;
     top: -6%;
 }
+
+
+.about_page_map {
+    top: 17%;
+    position: absolute;
+    left: 5%;
+}
+
+.about_page_header {
+    position: absolute;
+    top: 10%;
+    left: 39%;
+    color: black;
+    font-size: 80px;
+    font-family: cursive;
+}
+
+.about_page_location {
+    font-family: cursive;
+    position: absolute;
+    top: 22%;
+    left: 42%;
+    color: black;
+    font-size: 40px;
+}
+
+.about_page_phone_number {
+    font-family: cursive;
+    position: absolute;
+    top: 29%;
+    left: 42%;
+    color: black;
+    font-size: 40px;
+}
+
+.about_page_email {
+    font-family: cursive;
+    position: absolute;
+    top: 37%;
+    left: 42%;
+    color: black;
+    font-size: 40px;
+}
+
+.about_page_hours {
+    font-family: cursive;
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    color: black;
+    font-size: 40px;
+}
+
+.about_page_background {
+    position: absolute;
+    top: 22%;
+    background-color:rgb(237, 233, 226);
+    left: 1%;
+    width: 98%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+.cart {
+    position: absolute;
+    top: 3%;
+    left: 93%;
+    background-color: black;
+    font-size: 39px;
+}
+
+.cart:hover {
+    font-size: 42px;
+}

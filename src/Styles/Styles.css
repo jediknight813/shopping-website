@@ -32,6 +32,7 @@
     bottom: 0%;
     right: 0%;
     position: fixed;
+    z-index: 1;
 }
 
 .footer_text {
@@ -268,26 +269,42 @@
     right: 0%;
     top: 10%;
     width: 10%;
-    height: 70%;
+    height: 100%;
     z-index: 1;
-    background-color: rgb(105, 105, 196);
     position: absolute;
     border-radius: 20px;
 }
 
+.cart_background_hidden {
+    visibility: hidden;
+}
+
 .cart_item_image {
     position: relative;
-    right: 270%;
-    width: 300%;
+    right: 0%;
+    width: 70%;
     height: 70%;
     border-radius: 40px;
     margin-top: 0px;
+    overflow-y: scroll;
+    z-index: 3;
 }
 
 .cart_item_text {
     color: black;
     font-size: 30px;
     position: relative;
-    right: 255%;
+    right: 0%;
     font-family: cursive;
+    overflow-y: scroll;
+}
+
+.checkout_price {
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+
+.remove_item_from_cart_button {
+    
 }

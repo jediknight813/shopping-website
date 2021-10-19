@@ -10,26 +10,20 @@ import AboutPage from './Components/AboutPage'
 import Cart from './Components/Cart'
 
 
-const cart_items = []
+var cart_items = []
 
 function App() {
   const [cartItems, updateCartItems] = useState([])
 
 
   const addCartItem = (item) => {
-    cart_items.push(item)
-    updateCartItems(cart_items)
-    return (
-      <Router>
-        <Header />
-        <NavBar />
-        <Cart data={cartItems} />
-        <Route path="/shop" render={() => <Shop addCartItem={addCartItem} />} /> 
-        <Route exact path='/' component={HomePageBackground} />
-        <Route exact path="/about" component={AboutPage} />
-        <Footer />
-      </Router>
-  );
+    let b = [item]
+    cart_items.map(Element => (
+        b.push(Element[0])
+    ))
+    updateCartItems(b)
+    cart_items.push(b)
+ 
   }
 
 

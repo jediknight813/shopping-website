@@ -16,17 +16,23 @@ import imageTen from './Images/itemTen.png'
 const item_list = [{image: imageOne, price: "$199"}, {image: imageTwo, price: "$99"}, {image: imageThree, price: "$299"}, {image: imageFour, price: "$69"}, {image: imageFive, price: "$399"}, {image: imageSix, price: "$99"}, {image: imageSeven, price: "$199"}, {image: imageEight, price: "$80"}, {image: imageNine, price: "$499"}, {image: imageTen, price: "$299"},   ]
 
 
-function Shop() {
+function Shop( { addCartItem } ) {
+
     return(
         <div className="item_grid">
             {item_list.map(Element => (
                 <div key={Element.image}>
                     <img className="item_image" alt={Element.image} src={Element.image} />
-                    <button className="item_button"> Add to cart</button> <div className="item_price"> ⭐⭐⭐⭐⭐ {Element.price} </div>
+                    <button onClick={() => AddItemToCart({image: Element.image, price: Element.price })  } className="item_button"> Add to cart</button> <div className="item_price"> ⭐⭐⭐⭐⭐ {Element.price} </div>
                 </div>
             ))}
         </div>
     )
+    
+    function AddItemToCart(image, price) {
+        addCartItem( {image: image, price: price} )
+    }
+
 }
 
 

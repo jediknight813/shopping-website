@@ -9,12 +9,27 @@ import { BrowserRouter as Router, Route} from 'react-router-dom'
 import AboutPage from './Components/AboutPage'
 import Cart from './Components/Cart'
 
+
+const cart_items = []
+
 function App() {
   const [cartItems, updateCartItems] = useState([])
 
 
-  const CartItems = (item) => {
-    updateCartItems(item)
+  const addCartItem = (item) => {
+    cart_items.push(item)
+    updateCartItems(cart_items)
+    return (
+      <Router>
+        <Header />
+        <NavBar />
+        <Cart data={cartItems} />
+        <Route path="/shop" render={() => <Shop addCartItem={addCartItem} />} /> 
+        <Route exact path='/' component={HomePageBackground} />
+        <Route exact path="/about" component={AboutPage} />
+        <Footer />
+      </Router>
+  );
   }
 
 
@@ -22,8 +37,8 @@ return (
     <Router>
       <Header />
       <NavBar />
-      <Cart CartItems={CartItems} data={cartItems} />
-      <Route exact path="/shop" component={Shop}/>
+      <Cart data={cartItems} />
+      <Route path="/shop" render={() => <Shop addCartItem={addCartItem} />} /> 
       <Route exact path='/' component={HomePageBackground} />
       <Route exact path="/about" component={AboutPage} />
       <Footer />

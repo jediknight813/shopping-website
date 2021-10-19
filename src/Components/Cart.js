@@ -43,7 +43,7 @@ function Cart(data) {
                     <div key={Math.random()}>
                         <img className="cart_item_image" alt={items.image.price} src={items.image.image} /> 
                         <h1 className="cart_item_text" > {"$"+items.image.price} </h1>
-                        <button className="remove_item_from_cart_button"> remove item from cart </button>
+                        <button className="remove_item_from_cart_button"> remove item</button>
                     </div> )}
                 
                 <h1 className="checkout_price"> total: {price} </h1>

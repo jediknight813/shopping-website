@@ -306,5 +306,14 @@
 
 
 .remove_item_from_cart_button {
-    
+    position: relative;
+    right: -30%;
+    top: -12%;
+    background-color: rgb(244, 131, 32);
+    font-family: cursive;
+    border-radius: 15px;
+}
+
+.remove_item_from_cart_button:hover {
+    font-size: large;
 }

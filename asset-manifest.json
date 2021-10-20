@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/shopping-website/static/css/main.87e5a4d8.chunk.css",
+    "main.js": "/shopping-website/static/js/main.fa669622.chunk.js",
+    "main.js.map": "/shopping-website/static/js/main.fa669622.chunk.js.map",
+    "runtime-main.js": "/shopping-website/static/js/runtime-main.44a02dce.js",
+    "runtime-main.js.map": "/shopping-website/static/js/runtime-main.44a02dce.js.map",
+    "static/js/2.49d1880c.chunk.js": "/shopping-website/static/js/2.49d1880c.chunk.js",
+    "static/js/2.49d1880c.chunk.js.map": "/shopping-website/static/js/2.49d1880c.chunk.js.map",
+    "index.html": "/shopping-website/index.html",
+    "static/css/main.87e5a4d8.chunk.css.map": "/shopping-website/static/css/main.87e5a4d8.chunk.css.map",
+    "static/js/2.49d1880c.chunk.js.LICENSE.txt": "/shopping-website/static/js/2.49d1880c.chunk.js.LICENSE.txt",
+    "static/media/ItemFive.b59752f6.png": "/shopping-website/static/media/ItemFive.b59752f6.png",
+    "static/media/ItemOne.079afa67.png": "/shopping-website/static/media/ItemOne.079afa67.png",
+    "static/media/ItemTwo.f153940e.png": "/shopping-website/static/media/ItemTwo.f153940e.png",
+    "static/media/itemEight.8368b57a.png": "/shopping-website/static/media/itemEight.8368b57a.png",
+    "static/media/itemFour.1b35ec0c.png": "/shopping-website/static/media/itemFour.1b35ec0c.png",
+    "static/media/itemNine.71ba05c2.png": "/shopping-website/static/media/itemNine.71ba05c2.png",
+    "static/media/itemSeven.742d1a5f.png": "/shopping-website/static/media/itemSeven.742d1a5f.png",
+    "static/media/itemSix.53f8ab84.png": "/shopping-website/static/media/itemSix.53f8ab84.png",
+    "static/media/itemTen.e73faf1d.png": "/shopping-website/static/media/itemTen.e73faf1d.png",
+    "static/media/itemThree.b0761e0d.png": "/shopping-website/static/media/itemThree.b0761e0d.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.44a02dce.js",
+    "static/js/2.49d1880c.chunk.js",
+    "static/css/main.87e5a4d8.chunk.css",
+    "static/js/main.fa669622.chunk.js"
+  ]
+}

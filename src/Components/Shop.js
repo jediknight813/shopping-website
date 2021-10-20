@@ -30,7 +30,7 @@ function Shop( { addCartItem } ) {
     )
     
     function AddItemToCart(image, price) {
-        addCartItem( {image: image, price: price} )
+        addCartItem( {image: image, price: price, key: Math.random() } )
     }
 
 }

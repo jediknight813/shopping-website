@@ -6,7 +6,8 @@ var cart_class = 'cart_background';
 
 var price = 0
 
-function Cart(data) {
+
+function Cart( data)  {
     console.log(data)
     Updatecart()
     const [, updateState] = React.useState();
@@ -43,12 +44,29 @@ function Cart(data) {
                     <div key={Math.random()}>
                         <img className="cart_item_image" alt={items.image.price} src={items.image.image} /> 
                         <h1 className="cart_item_text" > {"$"+items.image.price} </h1>
-                        <button className="remove_item_from_cart_button"> remove item</button>
+                        <button onClick={() => remove_item_from_cart(items)} className="remove_item_from_cart_button"> remove item</button>
                     </div> )}
                 
                 <h1 className="checkout_price"> total: {price} </h1>
             </div>
         )
+    }
+
+
+    function remove_item_from_cart(list_items) {
+        let temp_list = []
+        data['data'].map(items => 
+            {if (items.key === list_items.key) {
+                console.log("incorrect data")
+            }
+            else {
+                temp_list.push(items)
+            }
+
+        }
+        )
+
+        data.removeCartItem(temp_list)
     }
 
     return(

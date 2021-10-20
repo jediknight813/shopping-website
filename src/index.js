@@ -16,22 +16,30 @@ function App() {
   const [cartItems, updateCartItems] = useState([])
 
 
-  const addCartItem = (item) => {
-    let b = [item]
-    cart_items.map(Element => (
-        b.push(Element[0])
-    ))
-    updateCartItems(b)
-    cart_items.push(b)
- 
-  }
+    const removeCartItem = (item_key) => {
+      updateCartItems(item_key)
+    }
+    
+
+    const addCartItem = (item) => {
+      let b = [item]
+      cart_items.map(Element => (
+          b.push(Element[0])
+      ))
+      updateCartItems(b)
+      cart_items.push(b)
+    }
+
+
+
 
 
 return (
     <Router>
       <Header />
       <NavBar />
-      <Cart data={cartItems} />
+      <Cart data={cartItems}
+      removeCartItem={removeCartItem} />
       <Route path="/shop" render={() => <Shop addCartItem={addCartItem} />} /> 
       <Route exact path='/' component={HomePageBackground} />
       <Route exact path="/about" component={AboutPage} />

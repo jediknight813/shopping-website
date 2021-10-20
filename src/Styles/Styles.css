@@ -307,9 +307,9 @@
 
 .remove_item_from_cart_button {
     position: relative;
-    right: -30%;
-    top: -12%;
-    background-color: rgb(244, 131, 32);
+    right: -40%;
+    top: -14%;
+    background-color: rgb(218, 124, 31);
     font-family: cursive;
     border-radius: 15px;
 }
